@@ -36,12 +36,3 @@ footer {
     padding: 1em;
     background-color: #f1f1f1;
 }
-
-#read-more {
-    color: #007bff;
-    cursor: pointer;
-    text-decoration: underline;
-    display: inline-block;
-    margin-top: 10px; /* Adjust this to bring it closer or farther from the first bullet point */
-}
-
