@@ -37,3 +37,8 @@ footer {
     background-color: #f1f1f1;
 }
 
+#read-more {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
