@@ -8,14 +8,17 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 function showMore() {
-    var moreContent = document.getElementById("more-content");
-    var readMoreLink = document.getElementById("read-more");
+    var moreContent = document.querySelectorAll('.more-content');
+    var readMoreLink = document.getElementById('read-more');
 
-    if (moreContent.style.display === "none") {
-        moreContent.style.display = "block";
-        readMoreLink.innerText = "Read less";
-    } else {
-        moreContent.style.display = "none";
-        readMoreLink.innerText = "Read more";
-    }
+    // Toggle the visibility of the hidden list items
+    moreContent.forEach(function(item) {
+        if (item.style.display === "none") {
+            item.style.display = "list-item";  // Show the hidden list items
+            readMoreLink.innerText = "Read less";
+        } else {
+            item.style.display = "none";  // Hide the list items again
+            readMoreLink.innerText = "Read more";
+        }
+    });
 }
