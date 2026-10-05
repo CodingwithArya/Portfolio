@@ -3219,3 +3219,14 @@ input, select, textarea {
 			}
 
 	}
+
+/* About paragraph spacing and in-page work links */
+
+	#one .para-gap {
+		display: block;
+		height: 0.875em;
+	}
+
+	.work-item {
+		scroll-margin-top: 1.25em;
+	}

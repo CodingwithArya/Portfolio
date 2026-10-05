@@ -4,7 +4,7 @@
 		<title>Arya Sanjay | Software Engineering & AI Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css?v=2" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 	</head>
 	<body class="is-preload">
@@ -29,13 +29,18 @@
 						</header>
 						<p>
 							Hi! I’m Arya, an undergraduate CS student at UW passionate about building real-world AI systems and tech that makes a difference. 
-							<br />
+							<span class="para-gap"></span>
 							In high school, I spent a year researching and developing machine learning (ML) models to help tackle Seattle’s homelessness crisis. My models identified where resources should be allocated to maximize the number of people transitioning out of homelessness.
-							<br />
-							In college, I’ve designed predictive translation models at the Allen School’s Mobile Intelligence Lab, developed ML models for disaster resilience under the U.S. Dept. of Transportation, and engineered full-stack systems like <strong>DeFakeIt</strong> (1st place, SWECCathon ‘25) and the <strong>Maple Room Booking App</strong>. 
-							<br />
-							Beyond research, I’m deeply passionate about outreach, specifically within education. As the <strong>co-president of Interactive Intelligence (I2)</strong>, I’ve taught hundreds of students at UW and beyond the fundamentals of AI. I also led outreach and community efforts through <strong>Women in Computing</strong> and now at <strong>CSEED</strong>.
-							<br />
+						</p>
+						<p>
+							In college, I’ve designed predictive translation models at the Allen School’s Mobile Intelligence Lab, developed ML models for disaster resilience under the U.S. Dept. of Transportation, and engineered full-stack systems like <strong><a href="#defakeit">DeFakeIt</a></strong> (1st place, SWECCathon ‘25) and the <strong><a href="#maple">Maple Room Booking App</a></strong>. 
+							<span class="para-gap"></span>
+							Beyond research, I’m deeply passionate about outreach, specifically within education. As the <strong>co-president of <a href="#interactive-intelligence">Interactive Intelligence (I2)</a></strong>, I’ve taught hundreds of students at UW and beyond the fundamentals of AI. I also led outreach and community efforts through <strong><a href="#wic">Women in Computing</a></strong> and now at <strong><a href="#cseed">CSEED</a></strong>.
+						</p>
+						<p>
+							In industry, I’ve been able to work on a lot of cool AI and security issues. At <strong><a href="#sage">Sage</a></strong>, I got my first exposure to Model Context Protocols (MCPs), building agent orchestration for Sage products. This past summer at <strong><a href="#uber">Uber</a></strong>, I got my first exposure to AI security in production, which grew my interest in securing AI systems at scale.
+						</p>
+						<p>
 							In the future, I would love to aim to drive innovation as a Software Engineer solving high-impact problems.
 						</p>
 						<ul class="actions">
@@ -48,7 +53,17 @@
 						<h2>Recent Work</h2>
 						<div class="row">
 
-							<article class="col-6 col-12-xsmall work-item">
+							<article id="uber" class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/uber-logo.png" class="image fit thumb">
+									<img src="images/fulls/uber-logo.png" alt="Uber Software Engineering Internship Thumbnail" />
+								</a>
+								<h3>Software Engineer Intern (Platform Engineering) at Uber</h3>
+								<ul>
+									<li>Hardened credential minting on Uber’s large-scale, distributed SSO service in Go by architecting sender-constrained tokens, binding 130K+ daily mints to cryptographic keys to close a security vulnerability.</li>
+									<li>Built Redis-backed single-use replay detection across a proof-signing library and edge verifier, scaling validated proof traffic 20x (450 to 9,800/day) before flipping enforcement; adopted by 4 internal developer tools and established as the pattern for other credential flows in the future.</li>
+								</ul>
+							</article>
+							<article id="sage" class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/sage-logo.png" class="image fit thumb">
 									<img src="images/fulls/sage-logo.png" alt="Sage Software Internship Thumbnail" />
 								</a>
@@ -69,7 +84,7 @@
 								</ul>
 							</article>
 							  
-							<article class="col-6 col-12-xsmall work-item">
+							<article id="defakeit" class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/defakeit.png" class="image fit thumb">
 								  <img src="images/fulls/defakeit.png" alt="DeFakeIt Hackathon Thumbnail" />
 								</a>
@@ -95,7 +110,7 @@
 								</ul>
 							</article>							
 																					
-							<article class="col-6 col-12-xsmall work-item">
+							<article id="maple" class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/maple-app.jpg" class="image fit thumb"><img src="images/fulls/maple-app.jpg" alt="Maple Room Study App Thumbnail" /></a>
 								<h3>Maple Room Study App Co-Founder & Developer</h3>
 								<ul>
@@ -152,7 +167,7 @@
 					<h2>Leadership & Outreach within Education</h2>
 					<div class="row">
 						<!-- Interactive Intelligence - Overarching Header -->
-						<article class="col-6 col-12-xsmall work-item">
+						<article id="interactive-intelligence" class="col-6 col-12-xsmall work-item">
 							<a href="images/fulls/interactive-intelligence.jpg" class="image fit thumb"><img src="images/fulls/interactive-intelligence.jpg" alt="Interactive Intelligence" /></a>
 							<h3>Interactive Intelligence (I2) </h3>
 							<ul>
@@ -180,7 +195,7 @@
 							</ul>
 						</article>
 
-						<article class="col-6 col-12-xsmall work-item">
+						<article id="cseed" class="col-6 col-12-xsmall work-item">
 							<a href="images/fulls/cseed.png" class="image fit thumb">
 								<img src="images/fulls/cseed.png" alt="cseed Buildspace" />
 							</a>
@@ -209,7 +224,7 @@
 
 
 						<!-- Women in Computing (WiC) -->
-						<article class="col-6 col-12-xsmall work-item">
+						<article id="wic" class="col-6 col-12-xsmall work-item">
 							<a href="images/fulls/outreach-wic.jpg" class="image fit thumb"><img src="images/fulls/outreach-wic.jpg" alt="WiC Outreach" /></a>
 							<h3>Women in Computing (WiC)</h3>
 							<ul>
